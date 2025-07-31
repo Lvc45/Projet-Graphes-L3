@@ -1,0 +1,71 @@
+====================
+Pour le test numero 12 (table 12.txt)
+====================
+La matrice initiale :
+-  |0  |1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |12 |13 |
+0  |*  |0  |0  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |
+1  |*  |*  |*  |10 |10 |*  |*  |*  |*  |*  |*  |*  |10 |*  |
+2  |*  |*  |*  |10 |10 |*  |*  |*  |*  |*  |*  |*  |*  |*  |
+3  |*  |*  |*  |*  |*  |*  |*  |*  |*  |9  |*  |*  |*  |*  |
+4  |*  |*  |*  |*  |*  |5  |*  |5  |*  |5  |*  |*  |*  |*  |
+5  |*  |*  |*  |*  |*  |*  |4  |*  |4  |*  |*  |*  |*  |*  |
+6  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |2  |2  |*  |
+7  |*  |*  |*  |*  |*  |*  |*  |*  |2  |*  |*  |*  |*  |*  |
+8  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |4  |*  |*  |
+9  |*  |*  |*  |*  |*  |*  |*  |*  |8  |*  |8  |*  |*  |*  |
+10 |*  |*  |*  |12 |*  |*  |*  |*  |*  |*  |*  |12 |*  |*  |
+11 |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |2  |
+12 |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |20 |
+13 |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |
+
+Le sommet d'entree est 0 et de sortie est 13
+
+La matrice d'ajacence :
+0 1 1 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 1 0 0 0 0 0 0 0 1 0
+0 0 0 1 1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 1 0 0 0 0
+0 0 0 0 0 1 0 1 0 1 0 0 0 0
+0 0 0 0 0 0 1 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 1 1 0
+0 0 0 0 0 0 0 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0 1 0 1 0 0 0
+0 0 0 1 0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+=== Pour l'etape rang = 0 :
+Les sommets restants a traiter : 0 1 2 3 4 5 6 7 8 9 10 11 12 13
+Transformation sur la ligne 0 colonne 0
+
+=== Pour l'etape rang = 1 :
+Les sommets restants a traiter : 1 2 3 4 5 6 7 8 9 10 11 12 13
+Transformation sur la ligne 1 colonne 1
+Transformation sur la ligne 2 colonne 2
+
+=== Pour l'etape rang = 2 :
+Les sommets restants a traiter : 3 4 5 6 7 8 9 10 11 12 13
+Transformation sur la ligne 4 colonne 4
+
+=== Pour l'etape rang = 3 :
+Les sommets restants a traiter : 3 5 6 7 8 9 10 11 12 13
+Transformation sur la ligne 5 colonne 5
+Transformation sur la ligne 7 colonne 7
+
+=== Pour l'etape rang = 4 :
+Les sommets restants a traiter : 3 6 8 9 10 11 12 13
+Transformation sur la ligne 6 colonne 6
+
+=== Pour l'etape rang = 5 :
+Les sommets restants a traiter : 3 8 9 10 11 12 13
+Transformation sur la ligne 12 colonne 12
+
+=== Pour l'etape rang = 6 :
+Les sommets restants a traiter : 3 8 9 10 11 13
+
+
+Il y a un circuit.
+Il n'y a pas d'arcs negatifs
+

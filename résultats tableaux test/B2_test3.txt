@@ -1,0 +1,127 @@
+====================
+Pour le test numero 3 (table 3.txt)
+====================
+La matrice initiale :
+-  |0  |1  |2  |3  |4  |5  |6  |7  |8  |9  |10 |11 |12 |13 |
+0  |*  |0  |0  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |
+1  |*  |*  |*  |2  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |
+2  |*  |*  |*  |5  |5  |*  |*  |*  |*  |*  |*  |*  |*  |*  |
+3  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |4  |*  |
+4  |*  |*  |*  |2  |*  |2  |*  |*  |2  |*  |*  |2  |*  |*  |
+5  |*  |*  |*  |*  |*  |*  |5  |*  |*  |5  |*  |*  |*  |*  |
+6  |*  |*  |*  |*  |*  |*  |*  |5  |5  |5  |*  |*  |*  |*  |
+7  |*  |*  |*  |*  |*  |*  |*  |*  |9  |9  |*  |*  |*  |*  |
+8  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |1  |
+9  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |5  |
+10 |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |9  |
+11 |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |1  |*  |*  |*  |
+12 |*  |*  |*  |*  |*  |*  |*  |*  |1  |*  |*  |*  |*  |*  |
+13 |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |
+
+Le sommet d'entree est 0 et de sortie est 13
+
+La matrice d'ajacence :
+0 1 1 0 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 0 0 0 0 0 0 0 0 0 0
+0 0 0 1 1 0 0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 1 0
+0 0 0 1 0 1 0 0 1 0 0 1 0 0
+0 0 0 0 0 0 1 0 0 1 0 0 0 0
+0 0 0 0 0 0 0 1 1 1 0 0 0 0
+0 0 0 0 0 0 0 0 1 1 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0 1 0 0 0
+0 0 0 0 0 0 0 0 1 0 0 0 0 0
+0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+=== Pour l'etape rang = 0 :
+Les sommets restants a traiter : 0 1 2 3 4 5 6 7 8 9 10 11 12 13
+Transformation sur la ligne 0 colonne 0
+
+=== Pour l'etape rang = 1 :
+Les sommets restants a traiter : 1 2 3 4 5 6 7 8 9 10 11 12 13
+Transformation sur la ligne 1 colonne 1
+Transformation sur la ligne 2 colonne 2
+
+=== Pour l'etape rang = 2 :
+Les sommets restants a traiter : 3 4 5 6 7 8 9 10 11 12 13
+Transformation sur la ligne 4 colonne 4
+
+=== Pour l'etape rang = 3 :
+Les sommets restants a traiter : 3 5 6 7 8 9 10 11 12 13
+Transformation sur la ligne 3 colonne 3
+Transformation sur la ligne 5 colonne 5
+Transformation sur la ligne 11 colonne 11
+
+=== Pour l'etape rang = 4 :
+Les sommets restants a traiter : 6 7 8 9 10 12 13
+Transformation sur la ligne 6 colonne 6
+Transformation sur la ligne 10 colonne 10
+Transformation sur la ligne 12 colonne 12
+
+=== Pour l'etape rang = 5 :
+Les sommets restants a traiter : 7 8 9 13
+Transformation sur la ligne 7 colonne 7
+
+=== Pour l'etape rang = 6 :
+Les sommets restants a traiter : 8 9 13
+Transformation sur la ligne 8 colonne 8
+Transformation sur la ligne 9 colonne 9
+
+=== Pour l'etape rang = 7 :
+Les sommets restants a traiter : 13
+Transformation sur la ligne 13 colonne 13
+
+
+Il n'y a pas de circuit.
+Il n'y a pas d'arcs negatifs
+
+C'est un graphe d'ordonnancement
+Sommet 0 : rang 0
+Sommet 1 : rang 1
+Sommet 2 : rang 1
+Sommet 4 : rang 2
+Sommet 3 : rang 3
+Sommet 5 : rang 3
+Sommet 11 : rang 3
+Sommet 6 : rang 4
+Sommet 10 : rang 4
+Sommet 12 : rang 4
+Sommet 7 : rang 5
+Sommet 8 : rang 6
+Sommet 9 : rang 6
+Sommet 13 : rang 7
+
+La date au plus tot du sommet 0 est 0
+La date au plus tot du sommet 1 est 0
+La date au plus tot du sommet 2 est 0
+La date au plus tot du sommet 3 est 7
+La date au plus tot du sommet 4 est 5
+La date au plus tot du sommet 5 est 7
+La date au plus tot du sommet 6 est 12
+La date au plus tot du sommet 7 est 17
+La date au plus tot du sommet 8 est 26
+La date au plus tot du sommet 9 est 26
+La date au plus tot du sommet 10 est 8
+La date au plus tot du sommet 11 est 7
+La date au plus tot du sommet 12 est 11
+La date au plus tot du sommet 13 est 31
+
+La date au plus tard du sommet 0 est 0
+La date au plus tard du sommet 1 est 23
+La date au plus tard du sommet 2 est 0
+La date au plus tard du sommet 3 est 25
+La date au plus tard du sommet 4 est 5
+La date au plus tard du sommet 5 est 7
+La date au plus tard du sommet 6 est 12
+La date au plus tard du sommet 7 est 17
+La date au plus tard du sommet 8 est 30
+La date au plus tard du sommet 9 est 26
+La date au plus tard du sommet 10 est 22
+La date au plus tard du sommet 11 est 21
+La date au plus tard du sommet 12 est 29
+La date au plus tard du sommet 13 est 31
+
+Le chemin critique le plus long est : 0 2 4 5 6 7 9 13

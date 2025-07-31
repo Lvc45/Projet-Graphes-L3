@@ -1,0 +1,103 @@
+====================
+Pour le test numero 10 (table 10.txt)
+====================
+La matrice initiale :
+-  |0  |1  |2  |3  |4  |5  |6  |7  |8  |9  |
+0  |*  |0  |*  |*  |*  |*  |*  |*  |*  |*  |
+1  |*  |*  |2  |*  |2  |2  |*  |*  |*  |*  |
+2  |*  |*  |*  |3  |3  |*  |*  |*  |3  |*  |
+3  |*  |*  |*  |*  |*  |*  |*  |5  |*  |*  |
+4  |*  |*  |*  |*  |*  |6  |6  |*  |6  |*  |
+5  |*  |*  |*  |*  |*  |*  |2  |2  |*  |*  |
+6  |*  |*  |*  |*  |*  |*  |*  |*  |*  |1  |
+7  |*  |*  |*  |*  |*  |*  |*  |*  |6  |*  |
+8  |*  |*  |*  |*  |*  |*  |*  |*  |*  |1  |
+9  |*  |*  |*  |*  |*  |*  |*  |*  |*  |*  |
+
+Le sommet d'entree est 0 et de sortie est 9
+
+La matrice d'ajacence :
+0 1 0 0 0 0 0 0 0 0
+0 0 1 0 1 1 0 0 0 0
+0 0 0 1 1 0 0 0 1 0
+0 0 0 0 0 0 0 1 0 0
+0 0 0 0 0 1 1 0 1 0
+0 0 0 0 0 0 1 1 0 0
+0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 1 0
+0 0 0 0 0 0 0 0 0 1
+0 0 0 0 0 0 0 0 0 0
+
+=== Pour l'etape rang = 0 :
+Les sommets restants a traiter : 0 1 2 3 4 5 6 7 8 9
+Transformation sur la ligne 0 colonne 0
+
+=== Pour l'etape rang = 1 :
+Les sommets restants a traiter : 1 2 3 4 5 6 7 8 9
+Transformation sur la ligne 1 colonne 1
+
+=== Pour l'etape rang = 2 :
+Les sommets restants a traiter : 2 3 4 5 6 7 8 9
+Transformation sur la ligne 2 colonne 2
+
+=== Pour l'etape rang = 3 :
+Les sommets restants a traiter : 3 4 5 6 7 8 9
+Transformation sur la ligne 3 colonne 3
+Transformation sur la ligne 4 colonne 4
+
+=== Pour l'etape rang = 4 :
+Les sommets restants a traiter : 5 6 7 8 9
+Transformation sur la ligne 5 colonne 5
+
+=== Pour l'etape rang = 5 :
+Les sommets restants a traiter : 6 7 8 9
+Transformation sur la ligne 6 colonne 6
+Transformation sur la ligne 7 colonne 7
+
+=== Pour l'etape rang = 6 :
+Les sommets restants a traiter : 8 9
+Transformation sur la ligne 8 colonne 8
+
+=== Pour l'etape rang = 7 :
+Les sommets restants a traiter : 9
+Transformation sur la ligne 9 colonne 9
+
+
+Il n'y a pas de circuit.
+Il n'y a pas d'arcs negatifs
+
+C'est un graphe d'ordonnancement
+Sommet 0 : rang 0
+Sommet 1 : rang 1
+Sommet 2 : rang 2
+Sommet 3 : rang 3
+Sommet 4 : rang 3
+Sommet 5 : rang 4
+Sommet 6 : rang 5
+Sommet 7 : rang 5
+Sommet 8 : rang 6
+Sommet 9 : rang 7
+
+La date au plus tot du sommet 0 est 0
+La date au plus tot du sommet 1 est 0
+La date au plus tot du sommet 2 est 2
+La date au plus tot du sommet 3 est 5
+La date au plus tot du sommet 4 est 5
+La date au plus tot du sommet 5 est 11
+La date au plus tot du sommet 6 est 13
+La date au plus tot du sommet 7 est 13
+La date au plus tot du sommet 8 est 19
+La date au plus tot du sommet 9 est 20
+
+La date au plus tard du sommet 0 est 0
+La date au plus tard du sommet 1 est 0
+La date au plus tard du sommet 2 est 2
+La date au plus tard du sommet 3 est 8
+La date au plus tard du sommet 4 est 5
+La date au plus tard du sommet 5 est 11
+La date au plus tard du sommet 6 est 19
+La date au plus tard du sommet 7 est 13
+La date au plus tard du sommet 8 est 19
+La date au plus tard du sommet 9 est 20
+
+Le chemin critique le plus long est : 0 1 2 4 5 7 8 9
